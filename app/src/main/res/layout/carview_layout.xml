@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    android:clickable="true"
+    app:cardUseCompatPadding="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:background="@drawable/backgroundcolorcardview"
+            android:id="@+id/imageView_carD_Id"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textTitile_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imageView_carD_Id"
+            android:layout_toRightOf="@+id/imageView_carD_Id"
+            android:text="FD Ferdous"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+     <TextView
+            android:id="@+id/descripiton_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imageView_carD_Id"
+            android:layout_toRightOf="@+id/imageView_carD_Id"
+            android:text="Description"
+            android:layout_below="@+id/textTitile_Id"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+ <TextView
+            android:id="@+id/study_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imageView_carD_Id"
+            android:layout_toRightOf="@+id/imageView_carD_Id"
+            android:text="study"
+            android:layout_below="@+id/descripiton_Id"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/call_button_Id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/study_Id"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-64dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/ic_call_black_24dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
